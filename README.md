@@ -63,21 +63,33 @@
 ​
 1. Product Category filter:
 ## st.selectbox with All + sorted unique ProductCategory.
+<img width="912" height="453" alt="image" src="https://github.com/user-attachments/assets/3bb6d428-8e27-4fdb-bb2c-062b9050b9a5" />
+
 
 2. User Gender filter:
 ## st.selectbox with All + sorted unique UserGender.
+<img width="872" height="226" alt="image" src="https://github.com/user-attachments/assets/73021dc5-6d44-4923-a5de-083fdc0c5f9c" />
+
 
 3. User Age range:
 ## st.slider for min and max age (18–70).
+<img width="887" height="300" alt="image" src="https://github.com/user-attachments/assets/a79dd885-ee08-4926-b504-dafecce019e4" />
+
 
 4. Revenue range:
 ## st.slider for minimum and maximum revenue (0–3000).
+<img width="887" height="220" alt="image" src="https://github.com/user-attachments/assets/5e2a1d03-b6ac-42df-a3d7-50fb3afe21cb" />
+
 
 5. Days to Return range:
 ## st.select_slider on sorted unique non‑null DaystoReturn values.
+<img width="895" height="225" alt="image" src="https://github.com/user-attachments/assets/eb811808-d314-43ed-ba4d-95e49cfd0360" />
+
 
 6. Return Reason filter:
 ## st.multiselect on unique ReturnReason values.
+<img width="907" height="291" alt="image" src="https://github.com/user-attachments/assets/8172a998-e3af-439c-9d8c-fc0b36c58101" />
+
 
 ## Filters are applied sequentially to a working copy of the dataframe, and the rest of the dashboard uses this filtered subset.
 ​
@@ -90,6 +102,8 @@
 ### Return Rate (%): Returned Orders / Total Orders * 100 (formatted to one decimal place).
 ### Avg Days to Return: Mean of DaystoReturn for filtered data (NA if not applicable).
 
+<img width="1857" height="678" alt="image" src="https://github.com/user-attachments/assets/4881a3b5-a6b3-4f9a-af45-e2a8f1b26b47" />
+
 4. Visualizations (Tabs)
 ## The main visual content is organized into three tabs: Overview, Returns Analysis, and Revenue Analysis.
 ​
@@ -101,6 +115,8 @@
 ### Return by Product Category (bar chart):
 
 ### Uses plotcategoryreturnpercentage(df) to compute return percentage per ProductCategory and plot a bar chart of Returned percentages.
+<img width="1843" height="758" alt="image" src="https://github.com/user-attachments/assets/9b6f4841-da7a-4333-90e0-5f4344777460" />
+
 
 ## Returns Analysis Tab
 ### Return Reasons Distribution (donut pie chart):
@@ -120,6 +136,8 @@ Color: ProductCategory
 Size: OrderQuantity
 
 Hover data: ReturnReason
+<img width="1863" height="768" alt="image" src="https://github.com/user-attachments/assets/e1cf71e4-4707-4675-9f32-38e38fbfa69c" />
+
 
 ## Revenue Analysis Tab
 ### Total Revenue by Product Category (pie chart):
@@ -129,6 +147,8 @@ Hover data: ReturnReason
 ### Revenue Distribution (histogram):
 
 ### plotrevenuehistogram(df) builds a histogram of Revenue with 30 bins, small bar gap, and labels.
+<img width="1900" height="672" alt="image" src="https://github.com/user-attachments/assets/b6183996-f071-44c4-9a8a-7100d5b9ac81" />
+
 
 5. Data Preview & Filter Summary
 ## Data Preview: A st.expander labeled with the number of filtered rows shows a st.dataframe preview of the filtered dataset.
