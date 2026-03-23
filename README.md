@@ -46,6 +46,8 @@
 -- Revenue: ProductPrice * OrderQuantity
 
 ## During preprocessing, OrderDate and ReturnDate are converted to datetime, DaystoReturn is coerced to numeric and transformed to its absolute value to handle negative anomalies, and Revenue is computed.
+<img width="992" height="541" alt="image" src="https://github.com/user-attachments/assets/5919f1d8-d6ad-4dab-9bb7-36df83d55025" />
+
 
 # Dashboard Features
 1. Data Loading & Preprocessing
